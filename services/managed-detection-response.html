@@ -6,10 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MeghOps | Innovating Cyber Horizons</title>
 
-    <meta
-      name="description"
-      content="Shaping the Future of Digital Security"
-    />
+    <meta name="description" content="Shaping the Future of Digital Security" />
 
     <!-- Facebook Meta Tags -->
     <meta property="og:url" content="https://app.meghops.com" />
@@ -26,44 +23,54 @@
 
     <link
       rel="shortcut icon"
-      href="./images/logo-icon.png"
+      href=".../images/logo-icon.png"
       type="image/x-icon"
     />
-    <link rel="stylesheet" href="./main-2.css" />
+    <link rel="stylesheet" href="../main-2.css" />
 
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
     />
-    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
-
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
+    ></script>
   </head>
-  <body x-data="{videoModal: false}" :class="{'overflow-hidden': videoModal}" class="bg-dark overflow-x-hidden">
-    <img src="https://ct.capterra.com/capterra_tracker.gif?vid=2229543&vkey=1818ec949afdd89046c81aa1abc85294" />
-    <div 
-      class="relative w-full pt-20"
-      >
+  <body
+    x-data="{videoModal: false}"
+    :class="{'overflow-hidden': videoModal}"
+    class="bg-dark overflow-x-hidden"
+  >
+    <img
+      src="https://ct.capterra.com/capterra_tracker.gif?vid=2229543&vkey=1818ec949afdd89046c81aa1abc85294"
+    />
+    <div class="relative w-full pt-20">
       <div class="absolute top-0 inset-x-0 h-auto z-[-1]">
-        <img src="./images/gradients/gradient-1.png" class="object-cover w-full h-auto" alt="">
+        <img
+          src="../images/gradients/gradient-1.png"
+          class="object-cover w-full h-auto"
+          alt=""
+        />
       </div>
-      <header 
+      <header
         x-data="{
-          mobileNav: false,
-          sticky: false,
-          scrolled: false,
-            lastScrollTop: 0,
-          scrolling() {
-            var st = window.pageYOffset || document.documentElement.scrollTop;
-            if ( st > 50) {
-              this.sticky = true;
-            }
-            if ( st < 10) {
-              this.sticky = false;
-            }
-            this.scrolled = st > this.lastScrollTop ? (st > 500 ? true : false) : false ;
-            this.lastScrollTop = st <= 0 ? 0 : st
+        mobileNav: false,
+        sticky: false,
+        scrolled: false,
+          lastScrollTop: 0,
+        scrolling() {
+          var st = window.pageYOffset || document.documentElement.scrollTop;
+          if ( st > 50) {
+            this.sticky = true;
           }
-        }" 
+          if ( st < 10) {
+            this.sticky = false;
+          }
+          this.scrolled = st > this.lastScrollTop ? (st > 500 ? true : false) : false ;
+          this.lastScrollTop = st <= 0 ? 0 : st
+        }
+      }"
         class="duration-300 fixed top-0 left-0 w-full z-20"
         :class="{'!py-2 bg-dark shadow-sm': sticky,'-translate-y-full': scrolled}"
         @scroll.window="scrolling()"
@@ -76,7 +83,7 @@
           <div class="flex">
             <a href="/" class="p-1.5">
               <span class="sr-only">Meghops </span>
-              <img class="h-12 w-auto" src="./images/logo-new.png" alt="" />
+              <img class="h-12 w-auto" src="../images/logo-new.png" alt="" />
             </a>
           </div>
           <div
@@ -116,7 +123,7 @@
                 <div class="flex divide-x divide-gray-600">
                   <div class="flex flex-col px-5 space-y-5">
                     <a
-                      href="./products/cspm.html"
+                      href="../products/cspm.html"
                       class="flex items-center space-x-3"
                     >
                       <span>
@@ -153,7 +160,7 @@
                       </span>
                     </a>
                     <a
-                      href="./products/cloud-compliance-audits.html"
+                      href="../products/cloud-compliance-audits.html"
                       class="flex items-center space-x-3"
                     >
                       <span>
@@ -195,7 +202,7 @@
                       </span>
                     </a>
                     <a
-                      href="./products/cloud-cost-optimization.html"
+                      href="../products/cloud-cost-optimization.html"
                       class="flex items-center space-x-3"
                     >
                       <span>
@@ -251,7 +258,7 @@
                   </div>
                   <div class="flex flex-col px-5 space-y-5">
                     <a
-                      href="./products/firewall.html"
+                      href="../products/firewall.html"
                       class="flex items-center space-x-3"
                     >
                       <span>
@@ -316,7 +323,7 @@
                       </span>
                     </a>
                     <a
-                      href="./products/log-analyzer.html"
+                      href="../products/log-analyzer.html"
                       class="flex items-center space-x-3"
                     >
                       <span>
@@ -378,7 +385,7 @@
                       </span>
                     </a>
                     <a
-                      href="./products/megheye.html"
+                      href="../products/megheye.html"
                       class="flex items-center space-x-3"
                     >
                       <span>
@@ -457,7 +464,7 @@
                 <div class="flex divide-x divide-gray-600 w-[500px]">
                   <div class="flex flex-col px-5 space-y-5">
                     <a
-                      href="./services/vapt.html"
+                      href="../services/vapt.html"
                       class="flex items-center space-x-3"
                     >
                       <span>
@@ -494,7 +501,7 @@
                       </span>
                     </a>
                     <a
-                      href="./services/cloud-security-assessments.html"
+                      href="../services/cloud-security-assessments.html"
                       class="flex items-center space-x-3"
                     >
                       <span>
@@ -536,7 +543,7 @@
                       </span>
                     </a>
                     <a
-                      href="./services/cloud-security-consulting.html"
+                      href="../services/cloud-security-consulting.html"
                       class="flex items-center space-x-3"
                     >
                       <span>
@@ -604,7 +611,7 @@
                   </div>
                   <div class="flex flex-col px-5 space-y-5">
                     <a
-                      href="./services/security-trainging-awareness.html"
+                      href="../services/security-trainging-awareness.html"
                       class="flex items-center space-x-3"
                     >
                       <span>
@@ -646,7 +653,7 @@
                       </span>
                     </a>
                     <a
-                      href="./services/security-monitoring.html"
+                      href="../services/security-monitoring.html"
                       class="flex items-center space-x-3"
                     >
                       <span>
@@ -708,7 +715,7 @@
                       </span>
                     </a>
                     <a
-                      href="./services/managed-detection-response.html"
+                      href="../services/managed-detection-response.html"
                       class="flex items-center space-x-3"
                     >
                       <span>
@@ -752,7 +759,7 @@
                   </div>
                   <!-- <div class="flex flex-col px-5 space-y-5">
                     <a
-                      href="./product.html"
+                      href="../product.html"
                       class="flex items-center space-x-3"
                     >
                       <span>
@@ -804,7 +811,7 @@
                       </span>
                     </a>
                     <a
-                      href="./product.html"
+                      href="../product.html"
                       class="flex items-center space-x-3"
                     >
                       <span>
@@ -851,7 +858,7 @@
                       </span>
                     </a>
                     <a
-                      href="./product.html"
+                      href="../product.html"
                       class="flex items-center space-x-3"
                     >
                       <span>
@@ -909,19 +916,19 @@
               >Documentation</a
             >
             <a
-              href="./about.html"
+              href="../about.html"
               class="text-sm text-white hover:text-gray-300 transition font-semibold leading-6 py-2 truncate"
               >About Us</a
             >
             <a
-              href="./contact.html"
+              href="../contact.html"
               class="text-sm text-white hover:text-gray-300 transition font-semibold leading-6 py-2 truncate"
               >Contact Us</a
             >
           </div>
           <div class="ml-8 lg:ml-12 items-center space-x-4 flex">
             <a
-              href="./trial.html"
+              href="../trial.html"
               class="primary-button truncate hidden lg:block"
             >
               <span class="px-5 py-2.5 inline-block">Get a Demo</span>
@@ -1012,7 +1019,7 @@
             <div class="flex items-center justify-between">
               <a href="#" class="-m-1.5 p-1.5">
                 <span class="sr-only">Your Company</span>
-                <img class="h-16 w-auto" src="./images/LOGO-01.png" alt="" />
+                <img class="h-16 w-auto" src="../images/LOGO-01.png" alt="" />
               </a>
               <button
                 @click="mobileNav = false"
@@ -1040,12 +1047,12 @@
               <div class="-my-6 divide-y divide-gray-500/10">
                 <div class="space-y-2 py-6">
                   <a
-                    href="./product.html"
+                    href="../product.html"
                     class="-mx-3 block rounded-lg px-3 py-2 text-base leading-7 text-mortal hover:bg-gray-50"
                     >Product</a
                   >
                   <a
-                    href="./services.html"
+                    href="../services.html"
                     class="-mx-3 block rounded-lg px-3 py-2 text-base leading-7 text-mortal hover:bg-gray-50"
                     >Services</a
                   >
@@ -1055,19 +1062,19 @@
                     >Documentation</a
                   >
                   <a
-                    href="./about.html"
+                    href="../about.html"
                     class="-mx-3 block rounded-lg px-3 py-2 text-base leading-7 text-mortal hover:bg-gray-50"
                     >About</a
                   >
                   <a
-                    href="./contact.html"
+                    href="../contact.html"
                     class="-mx-3 block rounded-lg px-3 py-2 text-base leading-7 text-mortal hover:bg-gray-50"
                     >Contact</a
                   >
                 </div>
                 <div class="py-6">
                   <a
-                    href="./trial.html"
+                    href="../trial.html"
                     class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                     >Sign Up</a
                   >
@@ -1079,184 +1086,255 @@
       </div>
       </header>
 
+      <!-- Hero -->
+      <section class="py-12 lg:py-20 relative">
+        <div class="max-w-3xl mx-auto px-5 relative">
+          <h1
+            class="text-xl sm:text-3xl lg:text-5xl font-semibold text-white text-center mb-8"
+          >
+          Managed Detection And Response (MDR)
+          </h1>
+        </div>
+      </section>
     </div>
 
     <main>
-      
-      <section class="mt-12 lg:mt-20 relative px-3 sm:px-10">
-        <div class="absolute z-[-10] inset-0 flex justify-end w-full h-full items-center">
-          <img src="./images/gradients/gradient-8.png" class="h-auto object-contain" alt="">
+      <!-- what is vapt -->
+      <section class="py-12 relative z-10 mb-12 lg:mb-20">
+        <div class="absolute top-0 inset-x-0 h-auto z-[-1]">
+          <img
+            src="../images/gradients/gradient-2.png"
+            class="object-cover w-full h-auto"
+            alt=""
+          />
         </div>
-        <div class="max-w-6xl mx-auto ">
-          <div class="rounded-2xl flex flex-col md:flex-row gap-x-6 gap-y-12 bg-[#170B12] py-6 px-3 sm:px-5 lg:p-8">
-            <div class="md:w-1/2 w-full flex flex-col justify-between space-y-10">
-              <div>
-                <h2 class="text-white font-semibold text-2xl mb-5 md:mt-10">Join with us to achieve ultimate cyber safety</h2>
-                <p class="text-white mb-7 text-sm">
-                  See how MeghOps Managed Security Services can help you:
-                </p>
-                <ul class="list-disc pl-4 flex flex-col space-y-4">
-                  <li class="text-white">
-                    <strong>24/7/365 Security Monitoring</strong> – Our team of experts is always on guard, monitoring your systems for any potential threats. We use sophisticated tools and techniques to detect and respond to security incidents in real time.
-                  </li>
-                  <li class="text-white">
-                    <strong>Exposure Assessment and Management</strong> – We conduct regular assessments to identify potential vulnerabilities and take proactive measures to manage and mitigate risks.
-                  </li>
-                  <li class="text-white">
-                    <strong>Security Consulting</strong> – Our team of experienced consultants provides strategic advice to help you improve your organisation’s security posture.
-                  </li>
-                  <li class="text-white">
-                    <strong>Security Technology Implementation</strong> – We implement cutting-edge security technologies to protect your sensitive data and IT infrastructure.
-                  </li>
-                  <li class="text-white">
-                    <strong>Holistic Cybersecurity Services</strong> – We offer round-the-clock holistic cybersecurity services, ensuring an augmented security posture for your organisation.
-                  </li>
-                </ul>
-              </div>
-              <div>
-                <p class="text-white mb-3 flex items-center">Supported by <span class="text-primary">
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 4.5 15 15m0 0V8.25m0 11.25H8.25" />
-                  </svg>
-                </span></p>
-                <div class="flex flex-wrap items-center gap-x-7 gap-y-4">
-                  <img src="./images/logos/google-for-startups.png" class="flex-shrink-0 h-6 object-contain" alt="">
-                  <img src="./images/logos/microsoft-for-startup.png" class="flex-shrink-0 h-12 object-contain" alt="">
-                  <img src="./images/logos/github.png" class="flex-shrink-0 h-8 object-contain" alt="">
-                  <img src="./images/logos/aws-for-startups.png" class="flex-shrink-0 h-8 object-contain" alt="">
-                </div>
-              </div>
-            </div>
-            <div
-              class="rounded-3xl w-full md:w-1/2 py-6 lg:py-8 px-3 sm:px-5 lg:px-6 border border-white/20"
-              style="background: linear-gradient(90.68deg, rgba(255, 0, 0, 0.17) 18.36%, rgba(184, 42, 44, 0.23) 84.93%);"
-            >
-              <form 
-                action="#"
-                x-data="form"
-              >
-                <h2 class="text-white text-lg font-semibold mb-6 text-center">Talk To Our Cyber Security Experts</h2>
-
-                <p class="text-red-500 font-semibold mb-6 text-sm" x-show="error">All fields are required</p>
-                <div class="mb-6">
-                  <input
-                    type="text"
-                    name="name"
-                    placeholder="Name"
-                    x-model="data.name"
-                    class="text-white w-full rounded-md border-white/20 focus:ring-primary focus:border-primary focus:ring-opacity-20 placeholder:text-white" style="background: linear-gradient(251.06deg, rgba(255, 255, 255, 0.1) -0.58%, rgba(255, 255, 255, 0.08) 93.77%);"
-                  >
-                </div>
-                <div class="mb-6 grid sm:grid-cols-2 gap-6">
-                  <div>
-                    <input
-                      type="text"
-                      name="companyName"
-                      x-model="data.companyName"
-                      placeholder="Company name"
-                      class="text-white w-full rounded-md border-white/20 focus:ring-primary focus:border-primary focus:ring-opacity-20 placeholder:text-white" style="background: linear-gradient(251.06deg, rgba(255, 255, 255, 0.1) -0.58%, rgba(255, 255, 255, 0.08) 93.77%);"
-                    >
-                  </div>
-                  <div>
-                    <input
-                      type="text"
-                      name="jobTitle"
-                      x-model="data.jobTitle"
-                      placeholder="Job Title"
-                      class="text-white w-full rounded-md border-white/20 focus:ring-primary focus:border-primary focus:ring-opacity-20 placeholder:text-white" style="background: linear-gradient(251.06deg, rgba(255, 255, 255, 0.1) -0.58%, rgba(255, 255, 255, 0.08) 93.77%);"
-                    >
-                  </div>
-                </div>
-                <div class="mb-6">
-                  <input
-                    type="email"
-                    name="email"
-                    x-model="data.email"
-                    placeholder="Email"
-                    class="text-white w-full rounded-md border-white/20 focus:ring-primary focus:border-primary focus:ring-opacity-20 placeholder:text-white" style="background: linear-gradient(251.06deg, rgba(255, 255, 255, 0.1) -0.58%, rgba(255, 255, 255, 0.08) 93.77%);"
-                  >
-                </div>
-                <div class="mb-6">
-                  <input
-                    type="text"
-                    name="phone"
-                    x-model="data.phone"
-                    placeholder="Phone Number"
-                    class="text-white w-full rounded-md border-white/20 focus:ring-primary focus:border-primary focus:ring-opacity-20 placeholder:text-white" style="background: linear-gradient(251.06deg, rgba(255, 255, 255, 0.1) -0.58%, rgba(255, 255, 255, 0.08) 93.77%);"
-                  >
-                </div>
-                <div 
-                  class="mb-6"
-                  x-data="{
-                    countries: [],
-                    async fetchCountries() {
-                      const response = await fetch('https://restcountries.com/v3.1/all?fields=name');
-                      const data = await response.json();
-                      let sortedData = data.sort(function (a, b) {
-                        if (a.name.common < b.name.common) {
-                          return -1;
-                        }
-                        if (a.name.common > b.name.common) {
-                          return 1;
-                        }
-                        return 0;
-                      });
-                      this.countries = sortedData;
-                    }
-                  }"
-                  x-init="fetchCountries()"
-                >
-                  <label for="country" class="mb-3 block text-white text-lg">Country</label>
-                  <select
-                    type="text"
-                    required
-                    name="country"
-                    x-model="data.country"
-                    placeholder="Select"
-                    class="text-white focus:bg-dark bg-transparent w-full rounded-md border-white/20 focus:ring-primary focus:border-primary focus:ring-opacity-20 placeholder:text-white""
-                  >
-                    <option value="">Select...</option>
-                    <template x-for="country in countries">
-                      <option :value="country.name.common" x-text="country.name.common">Bangladesh</option>
-                    </template>
-                  </select>
-                </div>
-                <div class="mb-6">
-                  <label for="country" class="mb-3 block text-white text-base">
-                    What are you hoping to <br> accomplish with MeghOps?
-                  </label>
-                  <textarea
-                    required
-                    type="text"
-                    name="text"
-                    x-model="data.text"
-                    placeholder="write here."
-                    rows="6"
-                    class="text-white w-full resize-none rounded-md border-white/20 focus:ring-primary focus:border-primary focus:ring-opacity-20 placeholder:text-white" style="background: linear-gradient(251.06deg, rgba(255, 255, 255, 0.1) -0.58%, rgba(255, 255, 255, 0.08) 93.77%);"
-                  ></textarea>
-                </div>
-                  <label for="privacy" class="flex space-x-3 mb-5 cursor-pointer">
-                    <input type="checkbox" id="privacy" class="cursor-pointer mt-2 rounded bg-transparent text-primary focus:ring-primary">
-                    <p class="text-white text-sm">
-                      MeghOps may contact me with information about Meghops products, services and events. I understand that I can opt-out at any time in the <a href="" class="underline">subscription center</a>.
-                    </p>
-                  </label>
-                <button type="submit" @click.prevent="submit()" id="submitTrail" class="primary-button mt-5 w-full">
-                  <span class="px-6 py-3 inline-flex items-center space-x-2">
-                    <span>Submit your request</span>
-                  </span>
-                </button>
-              </form>
-            </div>
+        <div class="max-w-6xl mx-auto px-5">
+          <div
+            class="flex flex-col md:flex-row items-center md:justify-between w-full gap-6"
+          >
+          <div class="md:w-1/2 w-full">
+            <h2 class="text-white text-lg sm:text-3xl font-semibold mb-8">
+              Empowering Your Defense: Comprehensive Managed Detection and Response Solutions
+            </h2>
+            <p class="text-white mb-7">
+              In today's dynamic cybersecurity landscape, organizations face an escalating array of sophisticated threats that require proactive detection and rapid response capabilities. Our Managed Detection and Response (MDR) service offers a proactive and holistic approach to cybersecurity, combining advanced threat detection technologies with expert analysis and response capabilities to defend against evolving cyber threats and safeguard your organization's digital assets.
+            </p>
+          </div>
+          <div class="w-full md:w-1/2 flex justify-center md:justify-end">
+            <img src="../images/vapt-1.png" class="max-h-96" alt="" />
+          </div>
+           
+            
           </div>
         </div>
       </section>
 
+      <div class="px-6 py-32 lg:px-8 relative z-10">
+        <div class="mx-auto max-w-6xl text-base leading-7 text-white">
+          <!-- <p class="text-base font-semibold leading-7 text-primary">Introducing</p> -->
+          <h1
+            class="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl"
+          >
+          The Role of Managed Detection and Response
+          </h1>
+          <p class="mt-6 text-xl leading-8">
+            Managed Detection and Response (MDR) is a proactive cybersecurity service that focuses on continuous monitoring, detection, analysis, and response to security threats. By leveraging a combination of advanced threat detection tools, machine learning algorithms, and human expertise, MDR services provide organizations with real-time threat visibility, rapid incident response, and enhanced cyber resilience. Key components of our MDR service include:
+          </p>
+          <div class="mt-12 max-w-7xl lg:flex space-y-8 lg:space-y-0 lg:space-x-8">
+            <div class="lg:flex-1">
+              <p class="text-lg font-semibold">
+                Managed Detection And Response
+              </p>
+              <!-- <p>Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget risus enim. Mattis mauris semper sed amet vitae sed turpis id. Id dolor praesent donec est. Odio penatibus risus viverra tellus varius sit neque erat velit. Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget risus enim. Mattis mauris semper sed amet vitae sed turpis id.</p> -->
+              <ul role="list" class="mt-8 max-w-xl text-gray-300 space-y-8 flex flex-col">
+                <li class="flex space-x-3">
+                  <span class="h-5 w-5 flex mt-1 rounded-full items-center justify-center text-xs font-semibold bg-white text-gray-900 flex-shrink-0">
+                    1
+                  </span>
+                  <!-- <svg
+                    class="mt-1 h-5 w-5 flex-none text-primary"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    aria-hidden="true"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                      clip-rule="evenodd"
+                    />
+                  </svg> -->
+                  <span
+                    ><strong class="font-semibold text-white"
+                      >Continuous Threat Monitoring:</strong
+                    >  Our MDR service continuously monitors network traffic, endpoint activities, and cloud environments for signs of malicious activity and suspicious behavior. By analyzing vast amounts of security data in real-time, we can detect and respond to threats quickly, minimizing the risk of data breaches and operational disruptions.</span
+                  >
+                </li>
+                <li class="flex space-x-3">
+                  <span class="h-5 w-5 flex mt-1 rounded-full items-center justify-center text-xs font-semibold bg-white text-gray-900 flex-shrink-0">
+                    2
+                  </span>
+                  <!-- <svg
+                    class="mt-1 h-5 w-5 flex-none text-primary"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    aria-hidden="true"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                      clip-rule="evenodd"
+                    />
+                  </svg> -->
+                  <span
+                    ><strong class="font-semibold text-white"
+                      >Advanced Threat Detection:</strong
+                    >  Leveraging cutting-edge threat detection technologies, such as endpoint detection and response (EDR), network traffic analysis (NTA), and user behavior analytics (UBA), our MDR service identifies sophisticated threats, including malware, ransomware, insider threats, and advanced persistent threats (APTs).</span
+                  >
+                </li>
+                <li class="flex space-x-3">
+                  <span class="h-5 w-5 flex mt-1 rounded-full items-center justify-center text-xs font-semibold bg-white text-gray-900 flex-shrink-0">
+                    3
+                  </span>
+                  <!-- <svg
+                    class="mt-1 h-5 w-5 flex-none text-primary"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    aria-hidden="true"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                      clip-rule="evenodd"
+                    />
+                  </svg> -->
+                  <span
+                    ><strong class="font-semibold text-white"
+                      > Expert Analysis and Response: </strong
+                    >  Our team of cybersecurity experts analyzes security alerts, investigates potential threats, and responds to security incidents promptly and effectively. By triaging alerts, correlating threat indicators, and conducting in-depth forensic analysis, we can identify the root cause of security incidents and implement mitigation measures to contain and remediate the threat.</span
+                  >
+                </li>
+                <li class="flex space-x-3">
+                  <span class="h-5 w-5 flex mt-1 rounded-full items-center justify-center text-xs font-semibold bg-white text-gray-900 flex-shrink-0">
+                    4
+                  </span>
+                  <!-- <svg
+                    class="mt-1 h-5 w-5 flex-none text-primary"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    aria-hidden="true"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                      clip-rule="evenodd"
+                    />
+                  </svg> -->
+                  <span
+                    ><strong class="font-semibold text-white"
+                      >Threat Hunting and Intelligence: </strong
+                    >  In addition to automated threat detection, our MDR service employs proactive threat hunting techniques to identify hidden threats and emerging attack vectors. By leveraging threat intelligence feeds, security research, and industry best practices, we stay ahead of evolving threats and proactively defend against new and emerging cyber attacks.</span
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="lg:flex-1">
+              <p class="text-lg font-semibold">
+                Benefits of Managed Detection and Response
+              </p>
+              <ul role="list" class="mt-8 max-w-xl text-gray-300">
+                <li class="flex space-x-3">
+                  <svg
+                    class="mt-1 h-5 w-5 flex-none text-primary"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    aria-hidden="true"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                  <span
+                    ><strong class="font-semibold text-white"
+                      >Proactive Threat Detection:</strong
+                    >  Managed Detection and Response services offer proactive threat detection capabilities, enabling organizations to identify and respond to security threats in their early stages before they escalate into major incidents.</span
+                  >
+                </li>
+                <li class="flex space-x-3 mt-5">
+                  <svg
+                    class="mt-1 h-5 w-5 flex-none text-primary"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    aria-hidden="true"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                  <span
+                    ><strong class="font-semibold text-white"
+                      >Rapid Incident Response:</strong
+                    >  Our MDR service provides rapid incident response capabilities, allowing organizations to contain and remediate security incidents promptly, minimize the impact on business operations, and prevent data breaches.</span
+                  >
+                </li>
+                <li class="flex space-x-3 mt-5">
+                  <svg
+                    class="mt-1 h-5 w-5 flex-none text-primary"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    aria-hidden="true"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                  <span
+                    ><strong class="font-semibold text-white"
+                      >Enhanced Cyber Resilience:</strong
+                    >   By combining advanced threat detection technologies with expert analysis and response capabilities, Managed Detection and Response services enhance an organization's cyber resilience and ability to withstand cyber attacks, disruptions, and security breaches.</span
+                  >
+                </li>
+                <li class="flex space-x-3 mt-5">
+                  <svg
+                    class="mt-1 h-5 w-5 flex-none text-primary"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    aria-hidden="true"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                  <span
+                    ><strong class="font-semibold text-white"
+                      >24/7 Security Monitoring:</strong
+                    >  Our MDR service offers 24/7 security monitoring and response capabilities, ensuring round-the-clock protection against cyber threats and providing peace of mind to organizations that their digital assets are being actively defended.</span
+                  >
+                </li>
+              </ul>
+              <!-- <p class="mt-8">Partnering for Security Excellence</p> -->
+            </div>
+          </div>
 
-
-
+          <h2 class="mt-16 text-2xl font-bold tracking-tight text-white">
+            Partnering for Security Excellence
+          </h2>
+          <p class="mt-6">
+            At MeghOps, we are committed to empowering organizations with comprehensive Managed Detection and Response solutions tailored to their unique security needs and objectives. Our team of cybersecurity experts brings extensive experience and expertise in threat detection, incident response, and cyber defense, enabling us to deliver proactive and effective cybersecurity services that help organizations stay ahead of evolving threats and protect their critical assets.
+          </p>
+          <p class="mt-10">
+            Empower your organization with our Managed Detection and Response service. Contact us today to learn more about how we can tailor our MDR solutions to meet your specific security requirements and help you achieve your cybersecurity goals.
+          </p>
+        </div>
+      </div>
     </main>
-
 
     <footer class="bg-[#211919] mt-12 xl:mt-20">
       <div class="border-b border-gray-600">
@@ -1265,7 +1343,7 @@
             class="lg:flex lg:space-x-5 space-y-10 lg:space-y-0 justify-between"
           >
             <div>
-              <img src="./images/logo-new.png" class="h-14" alt="" />
+              <img src="../images/logo-new.png" class="h-14" alt="" />
               <p class="mt-4 text-lg text-gray-300 max-w-xs">
                 MeghOps is a trusted and reliable managed security service
                 provider (MSSP).
@@ -1383,17 +1461,13 @@
                     class="inline-block"
                     href="https://www.softwareadvice.com/network-monitoring/meghops-profile/reviews/"
                   >
-                    <img
-                      class="max-h-12"
-                      border="0"
-                      src="/images/iso.png"
-                    />
+                    <img class="max-h-12" border="0" src="/images/iso.png" />
                   </a>
                 </div>
               </div>
               <!-- <button class="inline-flex text-white items-center space-x-2 font-semibold px-5 py-3 rounded-2xl border-2 border-primary hover:bg-primary transition">
                 <span>Portfolio</span>
-                <img src="./images/cloud-icon.png" class="flex-shrink-0" alt="">
+                <img src="../images/cloud-icon.png" class="flex-shrink-0" alt="">
               </button> -->
             </div>
           </div>
@@ -1493,42 +1567,26 @@
       </div>
     </footer>
 
-    <img src="https://ct.capterra.com/capterra_tracker.gif?vid=2229543&vkey=1818ec949afdd89046c81aa1abc85294" />
+    <img
+      src="https://ct.capterra.com/capterra_tracker.gif?vid=2229543&vkey=1818ec949afdd89046c81aa1abc85294"
+    />
 
-
-
-
-
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.8/axios.min.js" integrity="sha512-PJa3oQSLWRB7wHZ7GQ/g+qyv6r4mbuhmiDb8BjSFZ8NZ2a42oTtAq5n0ucWAwcQDlikAtkub+tPVCw4np27WCg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-            <script type="text/javascript">
-
-            document.addEventListener('alpine:init', () => {
-                    Alpine.data('form', () => ({
-                        apiUrl: 'https://app.meghops.com/v2/api/meghops/send-mail/get-demo',
-                        error: false,
-                        data: {
-                          "name": "",
-                          "companyName": "",
-                          "jobTitle": "",
-                          "phone": "",
-                          "email": "",
-                          "country": "",
-                          "text": ""
-                        },
-            
-                        async submit() {
-
-                          if (!this.data.companyName || !this.data.name || !this.data.jobTitle || !this.data.phone || !this.data.country || !this.data.text) {
-                            this.error = true
-                            return
-                          }
-
-                            let res = await axios.post(this.apiUrl, this.data)
-                            alert('success')
-                        }
-                    }))
-                })
-            </script>
-
+    <script>
+      (function (d, t) {
+        var BASE_URL = "https://app.chatwoot.com";
+        var g = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+        g.src = BASE_URL + "/packs/js/sdk.js";
+        g.defer = true;
+        g.async = true;
+        s.parentNode.insertBefore(g, s);
+        g.onload = function () {
+          window.chatwootSDK.run({
+            websiteToken: "HeS38o8Ev2R3XFLENP2ddXs2",
+            baseUrl: BASE_URL,
+          });
+        };
+      })(document, "script");
+    </script>
   </body>
 </html>

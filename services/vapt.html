@@ -26,10 +26,10 @@
 
     <link
       rel="shortcut icon"
-      href="./images/logo-icon.png"
+      href=".../images/logo-icon.png"
       type="image/x-icon"
     />
-    <link rel="stylesheet" href="./main-2.css" />
+    <link rel="stylesheet" href="../main-2.css" />
 
     <link
       rel="stylesheet"
@@ -44,26 +44,26 @@
       class="relative w-full pt-20"
       >
       <div class="absolute top-0 inset-x-0 h-auto z-[-1]">
-        <img src="./images/gradients/gradient-1.png" class="object-cover w-full h-auto" alt="">
+        <img src="../images/gradients/gradient-1.png" class="object-cover w-full h-auto" alt="">
       </div>
-      <header 
+      <header
         x-data="{
-          mobileNav: false,
-          sticky: false,
-          scrolled: false,
-            lastScrollTop: 0,
-          scrolling() {
-            var st = window.pageYOffset || document.documentElement.scrollTop;
-            if ( st > 50) {
-              this.sticky = true;
-            }
-            if ( st < 10) {
-              this.sticky = false;
-            }
-            this.scrolled = st > this.lastScrollTop ? (st > 500 ? true : false) : false ;
-            this.lastScrollTop = st <= 0 ? 0 : st
+        mobileNav: false,
+        sticky: false,
+        scrolled: false,
+          lastScrollTop: 0,
+        scrolling() {
+          var st = window.pageYOffset || document.documentElement.scrollTop;
+          if ( st > 50) {
+            this.sticky = true;
           }
-        }" 
+          if ( st < 10) {
+            this.sticky = false;
+          }
+          this.scrolled = st > this.lastScrollTop ? (st > 500 ? true : false) : false ;
+          this.lastScrollTop = st <= 0 ? 0 : st
+        }
+      }"
         class="duration-300 fixed top-0 left-0 w-full z-20"
         :class="{'!py-2 bg-dark shadow-sm': sticky,'-translate-y-full': scrolled}"
         @scroll.window="scrolling()"
@@ -76,7 +76,7 @@
           <div class="flex">
             <a href="/" class="p-1.5">
               <span class="sr-only">Meghops </span>
-              <img class="h-12 w-auto" src="./images/logo-new.png" alt="" />
+              <img class="h-12 w-auto" src="../images/logo-new.png" alt="" />
             </a>
           </div>
           <div
@@ -116,7 +116,7 @@
                 <div class="flex divide-x divide-gray-600">
                   <div class="flex flex-col px-5 space-y-5">
                     <a
-                      href="./products/cspm.html"
+                      href="../products/cspm.html"
                       class="flex items-center space-x-3"
                     >
                       <span>
@@ -153,7 +153,7 @@
                       </span>
                     </a>
                     <a
-                      href="./products/cloud-compliance-audits.html"
+                      href="../products/cloud-compliance-audits.html"
                       class="flex items-center space-x-3"
                     >
                       <span>
@@ -195,7 +195,7 @@
                       </span>
                     </a>
                     <a
-                      href="./products/cloud-cost-optimization.html"
+                      href="../products/cloud-cost-optimization.html"
                       class="flex items-center space-x-3"
                     >
                       <span>
@@ -251,7 +251,7 @@
                   </div>
                   <div class="flex flex-col px-5 space-y-5">
                     <a
-                      href="./products/firewall.html"
+                      href="../products/firewall.html"
                       class="flex items-center space-x-3"
                     >
                       <span>
@@ -316,7 +316,7 @@
                       </span>
                     </a>
                     <a
-                      href="./products/log-analyzer.html"
+                      href="../products/log-analyzer.html"
                       class="flex items-center space-x-3"
                     >
                       <span>
@@ -378,7 +378,7 @@
                       </span>
                     </a>
                     <a
-                      href="./products/megheye.html"
+                      href="../products/megheye.html"
                       class="flex items-center space-x-3"
                     >
                       <span>
@@ -420,6 +420,55 @@
                       </span>
                     </a>
                   </div>
+                  <!-- <div class="flex flex-col px-5 space-y-5">
+                    
+                    <a
+                      href="../products/server-health-monitoring.html"
+                      class="flex items-center space-x-3"
+                    >
+                      <span>
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <g clip-path="url(#clip0_3970_14182)">
+                            <path
+                              d="M2.49732 1.90079C2.69018 1.94376 2.77589 1.94376 2.82946 1.97599C3.82589 2.6528 4.31875 1.5033 5.07946 1.34215C5.13304 1.33141 5.13304 1.05209 5.14375 0.901685C5.17589 0.321559 5.47589 0.0100104 6.04375 0.0100104C7.14732 -0.000732641 8.25089 -0.000732641 9.36518 0.0100104C9.96518 0.0100104 10.2866 0.321559 10.2759 0.933914C10.2759 1.24546 10.3616 1.42809 10.6616 1.52478C10.8759 1.59998 11.0902 1.70741 11.2723 1.84707C11.6902 2.16937 12.0652 2.34125 12.5902 1.99748C12.9545 1.77187 13.3402 2.00822 13.5437 2.352C14.1437 3.34036 14.7223 4.33946 15.2902 5.34931C15.5473 5.81126 15.4187 6.24099 14.9152 6.52031C14.5937 6.70294 14.508 6.9178 14.5723 7.25083C14.6045 7.44421 14.6259 7.64833 14.5937 7.8417C14.5187 8.34663 14.5402 8.74412 15.0866 9.02344C15.4616 9.21681 15.5152 9.66802 15.2902 10.0655C14.7223 11.0539 14.1652 12.0422 13.5759 13.0199C13.2759 13.514 12.8687 13.6107 12.3437 13.3099C12.0437 13.138 11.8402 13.1488 11.583 13.3636C11.3902 13.5248 11.1759 13.6537 10.9402 13.7504C10.4902 13.9223 10.233 14.1479 10.2545 14.7065C10.2759 15.1362 9.91161 15.4048 9.46161 15.4156C8.30446 15.437 7.14732 15.437 5.99018 15.4156C5.46518 15.4048 5.14375 15.0718 5.15446 14.5239C5.15446 14.1909 5.06875 13.9975 4.74732 13.89C4.53304 13.8148 4.31875 13.6967 4.13661 13.557C3.72946 13.2455 3.37589 13.0628 2.86161 13.4066C2.49732 13.643 2.11161 13.4281 1.89732 13.0843C1.28661 12.096 0.697321 11.0754 0.129464 10.044C-0.116964 9.60357 0.0116071 9.1631 0.483036 8.91601C0.836607 8.73338 0.911607 8.49703 0.847321 8.14251C0.815179 7.94913 0.79375 7.74502 0.825893 7.55164C0.911607 7.05746 0.879464 6.69219 0.34375 6.41288C-0.03125 6.2195 -0.10625 5.77903 0.11875 5.38154C0.686607 4.37169 1.25446 3.36185 1.86518 2.38423C2.01518 2.15862 2.32589 2.02971 2.49732 1.90079ZM7.70446 10.2911C9.09732 10.3019 10.2652 9.15236 10.2866 7.75576C10.2973 6.33767 9.14018 5.14519 7.72589 5.14519C6.33304 5.13445 5.16518 6.28396 5.14375 7.68056C5.13304 9.0879 6.29018 10.2804 7.70446 10.2911Z"
+                              fill="#B61D1B"
+                            />
+                            <path
+                              d="M6.85661 18.8867C12.5673 18.8867 18.2245 18.8867 23.9995 18.8867C23.9459 19.9825 23.9995 21.089 23.8173 22.1634C23.6352 23.2269 22.5637 24.0004 21.4709 24.0004C17.4102 24.0112 13.3602 24.0112 9.29946 24.0004C8.03518 23.9897 6.93161 22.8831 6.86732 21.6155C6.83518 20.8849 6.85661 20.1544 6.85661 19.4239C6.85661 19.2627 6.85661 19.1016 6.85661 18.8867ZM16.2638 21.4113C16.2638 21.3254 16.2959 21.218 16.253 21.1535C16.1352 20.9494 15.9852 20.7668 15.8459 20.5841C15.6959 20.7668 15.5137 20.9279 15.4173 21.1428C15.353 21.2932 15.4066 21.4865 15.4066 21.6692C15.3959 21.9807 15.4602 22.2708 15.8245 22.2815C16.1887 22.2923 16.2745 22.0129 16.2638 21.6907C16.2638 21.594 16.2638 21.4973 16.2638 21.4113ZM17.978 21.4436C17.978 21.3147 18.0102 21.2072 17.9673 21.1428C17.8387 20.9386 17.6888 20.7668 17.5495 20.5734C17.3995 20.756 17.2495 20.9386 17.1209 21.132C17.078 21.1965 17.1102 21.3039 17.1102 21.3899C17.1316 21.7444 16.9816 22.2493 17.528 22.2493C18.0959 22.2708 17.9459 21.7551 17.978 21.4436ZM19.6816 21.4436C19.6816 21.3361 19.7245 21.2072 19.6709 21.132C19.553 20.9386 19.3923 20.756 19.2423 20.5734C19.103 20.7668 18.9102 20.9279 18.8352 21.1428C18.7709 21.3469 18.7709 21.6155 18.8352 21.8196C18.8995 22.0022 19.103 22.1204 19.253 22.2708C19.3923 22.1204 19.553 21.9807 19.6602 21.8088C19.7352 21.7229 19.6816 21.5725 19.6816 21.4436ZM21.3959 21.4221C21.3959 21.3146 21.4388 21.1857 21.3852 21.1105C21.278 20.9172 21.128 20.756 20.9887 20.5734C20.8387 20.756 20.6352 20.9064 20.5495 21.1105C20.4745 21.2932 20.4852 21.551 20.5495 21.7336C20.6245 21.9377 20.8066 22.0882 20.9352 22.2708C21.0852 22.0882 21.2566 21.927 21.3852 21.7336C21.4388 21.6692 21.3959 21.5295 21.3959 21.4221Z"
+                              fill="#B61D1B"
+                            />
+                            <path
+                              d="M6.88867 16.2864C7.70296 16.2864 8.4851 16.2864 9.26724 16.2864C10.2744 16.2864 10.8637 15.8245 11.1315 14.8683C11.2387 14.4923 11.8601 14.1271 12.2351 14.2237C13.2101 14.4816 13.8958 14.2237 14.378 13.3321C14.5922 12.9453 14.8387 12.8379 15.2565 12.8379C17.9458 12.8594 20.6351 12.8486 23.3137 12.8486C23.5065 12.8486 23.6994 12.8486 23.9244 12.8486C23.9244 14.5675 23.9244 16.2434 23.9244 17.9623C18.2458 17.9623 12.578 17.9623 6.88867 17.9623C6.88867 17.4252 6.88867 16.8988 6.88867 16.2864ZM16.2637 15.4485C16.2637 15.341 16.3065 15.2121 16.253 15.1369C16.1351 14.9435 15.9637 14.7609 15.8244 14.5783C15.6851 14.7716 15.4922 14.9435 15.4172 15.1476C15.353 15.3303 15.3422 15.5881 15.4172 15.7707C15.4922 15.9641 15.6958 16.1038 15.8351 16.2757C15.9744 16.1038 16.1351 15.9426 16.2422 15.76C16.3065 15.6848 16.2637 15.5559 16.2637 15.4485ZM17.978 15.4485C17.978 15.3195 18.0101 15.2121 17.9672 15.1476C17.8387 14.9435 17.6887 14.7716 17.5494 14.5783C17.3994 14.7609 17.2494 14.9435 17.1208 15.1369C17.078 15.2014 17.1101 15.3088 17.1101 15.3947C17.1315 15.7493 16.9815 16.2542 17.528 16.2542C18.0958 16.2649 17.9458 15.76 17.978 15.4485ZM19.6922 15.4485C19.6922 15.3195 19.7244 15.2121 19.6815 15.1476C19.553 14.9435 19.403 14.7716 19.2637 14.5783C19.1137 14.7609 18.9637 14.9435 18.8351 15.1369C18.7922 15.2014 18.8244 15.3088 18.8244 15.3947C18.8458 15.7493 18.6958 16.2542 19.2422 16.2542C19.8101 16.2649 19.6601 15.76 19.6922 15.4485ZM21.3958 15.4485C21.3958 15.341 21.4387 15.2121 21.3851 15.1369C21.2672 14.9435 21.1065 14.7609 20.9565 14.5783C20.8172 14.7716 20.6244 14.9328 20.5494 15.1476C20.4744 15.3518 20.4851 15.6203 20.5494 15.8245C20.6137 16.0071 20.8172 16.1253 20.9672 16.2757C21.1065 16.1253 21.2672 15.9856 21.3744 15.8137C21.4387 15.7278 21.3958 15.5774 21.3958 15.4485Z"
+                              fill="#B61D1B"
+                            />
+                            <path
+                              d="M11.3887 0.859375C12.7065 0.859375 13.928 0.859375 15.1494 0.859375C17.1422 0.859375 19.1351 0.859375 21.128 0.859375C22.928 0.859375 23.9565 1.90145 23.9565 3.71703C23.9565 4.44756 23.9565 5.17809 23.9565 5.95159C21.4065 5.95159 18.8672 5.95159 16.3494 5.95159C15.9637 4.34013 14.9351 3.04022 14.078 1.6651C13.7458 1.12795 13.0922 0.934576 12.4601 1.13869C12.053 1.2891 11.753 1.23538 11.3887 0.859375ZM17.978 3.43771C17.978 3.35177 17.978 3.25508 17.978 3.16913C17.9887 2.84684 17.8815 2.54604 17.528 2.61049C17.3672 2.64272 17.2065 2.95427 17.1315 3.16913C17.0672 3.36251 17.0565 3.6096 17.1315 3.79223C17.2065 3.98561 17.4101 4.12527 17.5601 4.28641C17.6994 4.12527 17.8494 3.98561 17.9565 3.80297C18.0208 3.70629 17.978 3.55588 17.978 3.43771ZM19.6922 3.42697C19.6922 3.31954 19.7351 3.19062 19.6815 3.11542C19.5744 2.92204 19.4244 2.7609 19.2851 2.57826C19.1351 2.7609 18.9315 2.9113 18.8458 3.11542C18.7708 3.29805 18.7815 3.55588 18.8458 3.73852C18.9208 3.94263 19.103 4.09304 19.2315 4.27567C19.3815 4.09304 19.553 3.93189 19.6815 3.73852C19.7244 3.66331 19.6922 3.5344 19.6922 3.42697ZM21.3958 3.42697C21.3958 3.31954 21.4387 3.19062 21.3851 3.11542C21.278 2.92204 21.1172 2.7609 20.9887 2.58901C20.8387 2.77164 20.6351 2.92204 20.5601 3.1369C20.4851 3.31954 20.4958 3.57737 20.5601 3.76C20.6351 3.95338 20.8172 4.11452 20.9565 4.28641C21.1065 4.10378 21.2672 3.94263 21.3958 3.73852C21.4387 3.66331 21.3958 3.5344 21.3958 3.42697Z"
+                              fill="#B61D1B"
+                            />
+                            <path
+                              d="M15.2031 11.9672C15.4924 11.4623 15.7603 11.0218 16.0067 10.5706C16.446 9.76489 16.3603 9.02361 15.6853 8.38977C15.321 8.046 15.4281 7.6485 15.5031 7.30472C15.5781 6.98243 15.921 6.85352 16.3067 6.85352C18.8353 6.875 21.3531 6.86426 23.9246 6.86426C23.9246 8.56166 23.9246 10.2483 23.9246 11.9672C21.0424 11.9672 18.1603 11.9672 15.2031 11.9672ZM17.9781 9.44259C17.9781 9.31368 18.0103 9.20625 17.9674 9.14179C17.8388 8.93767 17.6888 8.76578 17.5496 8.57241C17.3996 8.75504 17.2496 8.93767 17.121 9.13104C17.0781 9.1955 17.1103 9.30293 17.1103 9.38888C17.1317 9.7434 16.9817 10.2483 17.5281 10.2483C18.096 10.2698 17.946 9.75414 17.9781 9.44259ZM18.8353 9.41036C18.8353 9.53928 18.8031 9.64671 18.846 9.71117C18.9746 9.91529 19.1246 10.0872 19.2638 10.2806C19.4138 10.0979 19.5638 9.91529 19.6924 9.72191C19.7353 9.65745 19.7031 9.55002 19.7031 9.46408C19.6817 9.10956 19.8317 8.60463 19.2853 8.60463C18.7067 8.59389 18.8567 9.09882 18.8353 9.41036ZM20.5388 9.37814C20.5388 9.50705 20.496 9.64671 20.5496 9.7434C20.6567 9.93677 20.8174 10.0979 20.946 10.2698C21.096 10.0872 21.3103 9.93677 21.3746 9.72191C21.4496 9.49631 21.4388 9.21699 21.3746 8.99138C21.321 8.83024 21.096 8.57241 20.9888 8.59389C20.8174 8.63686 20.6567 8.84098 20.5496 9.00213C20.496 9.09882 20.5388 9.25996 20.5388 9.37814Z"
+                              fill="#B61D1B"
+                            />
+                          </g>
+                          <defs>
+                            <clipPath id="clip0_3970_14182">
+                              <rect width="24" height="24" fill="white" />
+                            </clipPath>
+                          </defs>
+                        </svg>
+                      </span>
+
+                      <span class="font-medium text-white text-base">
+                        Server Health Monitoring
+                      </span>
+                    </a>
+                  </div> -->
                 </div>
               </div>
             </div>
@@ -457,7 +506,7 @@
                 <div class="flex divide-x divide-gray-600 w-[500px]">
                   <div class="flex flex-col px-5 space-y-5">
                     <a
-                      href="./services/vapt.html"
+                      href="../services/vapt.html"
                       class="flex items-center space-x-3"
                     >
                       <span>
@@ -494,7 +543,7 @@
                       </span>
                     </a>
                     <a
-                      href="./services/cloud-security-assessments.html"
+                      href="../services/cloud-security-assessments.html"
                       class="flex items-center space-x-3"
                     >
                       <span>
@@ -536,7 +585,7 @@
                       </span>
                     </a>
                     <a
-                      href="./services/cloud-security-consulting.html"
+                      href="../services/cloud-security-consulting.html"
                       class="flex items-center space-x-3"
                     >
                       <span>
@@ -604,7 +653,7 @@
                   </div>
                   <div class="flex flex-col px-5 space-y-5">
                     <a
-                      href="./services/security-trainging-awareness.html"
+                      href="../services/security-trainging-awareness.html"
                       class="flex items-center space-x-3"
                     >
                       <span>
@@ -646,7 +695,7 @@
                       </span>
                     </a>
                     <a
-                      href="./services/security-monitoring.html"
+                      href="../services/security-monitoring.html"
                       class="flex items-center space-x-3"
                     >
                       <span>
@@ -708,7 +757,7 @@
                       </span>
                     </a>
                     <a
-                      href="./services/managed-detection-response.html"
+                      href="../services/managed-detection-response.html"
                       class="flex items-center space-x-3"
                     >
                       <span>
@@ -752,7 +801,7 @@
                   </div>
                   <!-- <div class="flex flex-col px-5 space-y-5">
                     <a
-                      href="./product.html"
+                      href="../product.html"
                       class="flex items-center space-x-3"
                     >
                       <span>
@@ -804,7 +853,7 @@
                       </span>
                     </a>
                     <a
-                      href="./product.html"
+                      href="../product.html"
                       class="flex items-center space-x-3"
                     >
                       <span>
@@ -851,7 +900,7 @@
                       </span>
                     </a>
                     <a
-                      href="./product.html"
+                      href="../product.html"
                       class="flex items-center space-x-3"
                     >
                       <span>
@@ -909,19 +958,19 @@
               >Documentation</a
             >
             <a
-              href="./about.html"
+              href="../about.html"
               class="text-sm text-white hover:text-gray-300 transition font-semibold leading-6 py-2 truncate"
               >About Us</a
             >
             <a
-              href="./contact.html"
+              href="../contact.html"
               class="text-sm text-white hover:text-gray-300 transition font-semibold leading-6 py-2 truncate"
               >Contact Us</a
             >
           </div>
           <div class="ml-8 lg:ml-12 items-center space-x-4 flex">
             <a
-              href="./trial.html"
+              href="../trial.html"
               class="primary-button truncate hidden lg:block"
             >
               <span class="px-5 py-2.5 inline-block">Get a Demo</span>
@@ -1012,7 +1061,7 @@
             <div class="flex items-center justify-between">
               <a href="#" class="-m-1.5 p-1.5">
                 <span class="sr-only">Your Company</span>
-                <img class="h-16 w-auto" src="./images/LOGO-01.png" alt="" />
+                <img class="h-16 w-auto" src="../images/LOGO-01.png" alt="" />
               </a>
               <button
                 @click="mobileNav = false"
@@ -1040,12 +1089,12 @@
               <div class="-my-6 divide-y divide-gray-500/10">
                 <div class="space-y-2 py-6">
                   <a
-                    href="./product.html"
+                    href="../product.html"
                     class="-mx-3 block rounded-lg px-3 py-2 text-base leading-7 text-mortal hover:bg-gray-50"
                     >Product</a
                   >
                   <a
-                    href="./services.html"
+                    href="../services.html"
                     class="-mx-3 block rounded-lg px-3 py-2 text-base leading-7 text-mortal hover:bg-gray-50"
                     >Services</a
                   >
@@ -1055,19 +1104,19 @@
                     >Documentation</a
                   >
                   <a
-                    href="./about.html"
+                    href="../about.html"
                     class="-mx-3 block rounded-lg px-3 py-2 text-base leading-7 text-mortal hover:bg-gray-50"
                     >About</a
                   >
                   <a
-                    href="./contact.html"
+                    href="../contact.html"
                     class="-mx-3 block rounded-lg px-3 py-2 text-base leading-7 text-mortal hover:bg-gray-50"
                     >Contact</a
                   >
                 </div>
                 <div class="py-6">
                   <a
-                    href="./trial.html"
+                    href="../trial.html"
                     class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                     >Sign Up</a
                   >
@@ -1079,179 +1128,259 @@
       </div>
       </header>
 
+      <!-- Hero -->
+      <section class="py-12 lg:py-20 relative">
+        <div class="max-w-3xl mx-auto px-5 relative">
+          <h1 class="text-xl sm:text-3xl lg:text-5xl font-semibold text-white text-center mb-8">Vulnerability <br> Assessment And <br> Penetration testing </h1>    
+        
+        </div>
+      </section>
     </div>
 
     <main>
       
-      <section class="mt-12 lg:mt-20 relative px-3 sm:px-10">
-        <div class="absolute z-[-10] inset-0 flex justify-end w-full h-full items-center">
-          <img src="./images/gradients/gradient-8.png" class="h-auto object-contain" alt="">
-        </div>
-        <div class="max-w-6xl mx-auto ">
-          <div class="rounded-2xl flex flex-col md:flex-row gap-x-6 gap-y-12 bg-[#170B12] py-6 px-3 sm:px-5 lg:p-8">
-            <div class="md:w-1/2 w-full flex flex-col justify-between space-y-10">
-              <div>
-                <h2 class="text-white font-semibold text-2xl mb-5 md:mt-10">Join with us to achieve ultimate cyber safety</h2>
-                <p class="text-white mb-7 text-sm">
-                  See how MeghOps Managed Security Services can help you:
-                </p>
-                <ul class="list-disc pl-4 flex flex-col space-y-4">
-                  <li class="text-white">
-                    <strong>24/7/365 Security Monitoring</strong> – Our team of experts is always on guard, monitoring your systems for any potential threats. We use sophisticated tools and techniques to detect and respond to security incidents in real time.
-                  </li>
-                  <li class="text-white">
-                    <strong>Exposure Assessment and Management</strong> – We conduct regular assessments to identify potential vulnerabilities and take proactive measures to manage and mitigate risks.
-                  </li>
-                  <li class="text-white">
-                    <strong>Security Consulting</strong> – Our team of experienced consultants provides strategic advice to help you improve your organisation’s security posture.
-                  </li>
-                  <li class="text-white">
-                    <strong>Security Technology Implementation</strong> – We implement cutting-edge security technologies to protect your sensitive data and IT infrastructure.
-                  </li>
-                  <li class="text-white">
-                    <strong>Holistic Cybersecurity Services</strong> – We offer round-the-clock holistic cybersecurity services, ensuring an augmented security posture for your organisation.
-                  </li>
-                </ul>
-              </div>
-              <div>
-                <p class="text-white mb-3 flex items-center">Supported by <span class="text-primary">
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 4.5 15 15m0 0V8.25m0 11.25H8.25" />
-                  </svg>
-                </span></p>
-                <div class="flex flex-wrap items-center gap-x-7 gap-y-4">
-                  <img src="./images/logos/google-for-startups.png" class="flex-shrink-0 h-6 object-contain" alt="">
-                  <img src="./images/logos/microsoft-for-startup.png" class="flex-shrink-0 h-12 object-contain" alt="">
-                  <img src="./images/logos/github.png" class="flex-shrink-0 h-8 object-contain" alt="">
-                  <img src="./images/logos/aws-for-startups.png" class="flex-shrink-0 h-8 object-contain" alt="">
-                </div>
-              </div>
-            </div>
-            <div
-              class="rounded-3xl w-full md:w-1/2 py-6 lg:py-8 px-3 sm:px-5 lg:px-6 border border-white/20"
-              style="background: linear-gradient(90.68deg, rgba(255, 0, 0, 0.17) 18.36%, rgba(184, 42, 44, 0.23) 84.93%);"
-            >
-              <form 
-                action="#"
-                x-data="form"
-              >
-                <h2 class="text-white text-lg font-semibold mb-6 text-center">Talk To Our Cyber Security Experts</h2>
 
-                <p class="text-red-500 font-semibold mb-6 text-sm" x-show="error">All fields are required</p>
-                <div class="mb-6">
-                  <input
-                    type="text"
-                    name="name"
-                    placeholder="Name"
-                    x-model="data.name"
-                    class="text-white w-full rounded-md border-white/20 focus:ring-primary focus:border-primary focus:ring-opacity-20 placeholder:text-white" style="background: linear-gradient(251.06deg, rgba(255, 255, 255, 0.1) -0.58%, rgba(255, 255, 255, 0.08) 93.77%);"
-                  >
-                </div>
-                <div class="mb-6 grid sm:grid-cols-2 gap-6">
-                  <div>
-                    <input
-                      type="text"
-                      name="companyName"
-                      x-model="data.companyName"
-                      placeholder="Company name"
-                      class="text-white w-full rounded-md border-white/20 focus:ring-primary focus:border-primary focus:ring-opacity-20 placeholder:text-white" style="background: linear-gradient(251.06deg, rgba(255, 255, 255, 0.1) -0.58%, rgba(255, 255, 255, 0.08) 93.77%);"
-                    >
-                  </div>
-                  <div>
-                    <input
-                      type="text"
-                      name="jobTitle"
-                      x-model="data.jobTitle"
-                      placeholder="Job Title"
-                      class="text-white w-full rounded-md border-white/20 focus:ring-primary focus:border-primary focus:ring-opacity-20 placeholder:text-white" style="background: linear-gradient(251.06deg, rgba(255, 255, 255, 0.1) -0.58%, rgba(255, 255, 255, 0.08) 93.77%);"
-                    >
-                  </div>
-                </div>
-                <div class="mb-6">
-                  <input
-                    type="email"
-                    name="email"
-                    x-model="data.email"
-                    placeholder="Email"
-                    class="text-white w-full rounded-md border-white/20 focus:ring-primary focus:border-primary focus:ring-opacity-20 placeholder:text-white" style="background: linear-gradient(251.06deg, rgba(255, 255, 255, 0.1) -0.58%, rgba(255, 255, 255, 0.08) 93.77%);"
-                  >
-                </div>
-                <div class="mb-6">
-                  <input
-                    type="text"
-                    name="phone"
-                    x-model="data.phone"
-                    placeholder="Phone Number"
-                    class="text-white w-full rounded-md border-white/20 focus:ring-primary focus:border-primary focus:ring-opacity-20 placeholder:text-white" style="background: linear-gradient(251.06deg, rgba(255, 255, 255, 0.1) -0.58%, rgba(255, 255, 255, 0.08) 93.77%);"
-                  >
-                </div>
-                <div 
-                  class="mb-6"
-                  x-data="{
-                    countries: [],
-                    async fetchCountries() {
-                      const response = await fetch('https://restcountries.com/v3.1/all?fields=name');
-                      const data = await response.json();
-                      let sortedData = data.sort(function (a, b) {
-                        if (a.name.common < b.name.common) {
-                          return -1;
-                        }
-                        if (a.name.common > b.name.common) {
-                          return 1;
-                        }
-                        return 0;
-                      });
-                      this.countries = sortedData;
-                    }
-                  }"
-                  x-init="fetchCountries()"
-                >
-                  <label for="country" class="mb-3 block text-white text-lg">Country</label>
-                  <select
-                    type="text"
-                    required
-                    name="country"
-                    x-model="data.country"
-                    placeholder="Select"
-                    class="text-white focus:bg-dark bg-transparent w-full rounded-md border-white/20 focus:ring-primary focus:border-primary focus:ring-opacity-20 placeholder:text-white""
-                  >
-                    <option value="">Select...</option>
-                    <template x-for="country in countries">
-                      <option :value="country.name.common" x-text="country.name.common">Bangladesh</option>
-                    </template>
-                  </select>
-                </div>
-                <div class="mb-6">
-                  <label for="country" class="mb-3 block text-white text-base">
-                    What are you hoping to <br> accomplish with MeghOps?
-                  </label>
-                  <textarea
-                    required
-                    type="text"
-                    name="text"
-                    x-model="data.text"
-                    placeholder="write here."
-                    rows="6"
-                    class="text-white w-full resize-none rounded-md border-white/20 focus:ring-primary focus:border-primary focus:ring-opacity-20 placeholder:text-white" style="background: linear-gradient(251.06deg, rgba(255, 255, 255, 0.1) -0.58%, rgba(255, 255, 255, 0.08) 93.77%);"
-                  ></textarea>
-                </div>
-                  <label for="privacy" class="flex space-x-3 mb-5 cursor-pointer">
-                    <input type="checkbox" id="privacy" class="cursor-pointer mt-2 rounded bg-transparent text-primary focus:ring-primary">
-                    <p class="text-white text-sm">
-                      MeghOps may contact me with information about Meghops products, services and events. I understand that I can opt-out at any time in the <a href="" class="underline">subscription center</a>.
-                    </p>
-                  </label>
-                <button type="submit" @click.prevent="submit()" id="submitTrail" class="primary-button mt-5 w-full">
-                  <span class="px-6 py-3 inline-flex items-center space-x-2">
-                    <span>Submit your request</span>
-                  </span>
-                </button>
-              </form>
+      <!-- what is vapt -->
+      <section class="py-12 relative z-10 mb-12 lg:mb-20">
+        <div class="absolute top-0 inset-x-0 h-auto z-[-1]">
+          <img src="../images/gradients/gradient-2.png" class="object-cover w-full h-auto" alt="">
+        </div>
+        <div class="max-w-6xl mx-auto px-5">
+          <div class="flex flex-col md:flex-row items-center md:justify-between w-full gap-6">
+            <div class="md:w-1/2 w-full">
+              <h2 class="text-white text-lg sm:text-4xl font-semibold mb-8">What is VAPT?</h2>
+              <p class="text-white mb-7 ">VAPT, short for Vulnerability Assessment and Penetration Testing, is a comprehensive security testing approach aimed at identifying and addressing cyber security vulnerabilities. By combining both vulnerability assessment and penetration testing, VAPT provides a thorough analysis to strengthen your organisation’s cyber security.</p>
+              <p class="text-white mb-4 ">The meaning of VAPT can vary from one geographical region to another, either as a bracket for multiple distinct services, or a single, combined offering. VAPT as a whole could include anything from automated vulnerability assessments to human-led penetration testing and red team operations.</p>
+            </div>
+            <div class="w-full md:w-1/2 flex justify-center md:justify-end">
+              <img src="../images/vapt-1.png" class="max-h-96" alt="">
             </div>
           </div>
         </div>
       </section>
 
+      <!-- value of vapt -->
+      <section class="py-12 relative z-10 mb-12 lg:mb-20">
+        
+        <!-- <div class="absolute bottom-0 inset-x-0 h-auto z-[-1]">
+          <img src="../images/gradients/gradient-3.png" class="object-cover w-full h-auto" alt="">
+        </div> -->
+        <div class="max-w-6xl mx-auto px-5">
+          <div class="flex flex-col md:flex-row items-center md:justify-between w-full gap-6">
+            <div class="w-full md:w-1/2 flex justify-center md:justify-start">
+              <img src="../images/vapt-2.png" alt="">
+            </div>
+            <div class="md:w-1/2 w-full md:pl-8 lg:pl-12">
+              <h2 class="text-white text-lg sm:text-4xl font-semibold mb-8">The value of VAPT</h2>
+              <p class="text-white mb-7">VAPT describes a broad range of security assessment services designed to identify and help address cyber security exposures across an organisation’s IT estate.</p>
+              <p class="text-white mb-4">
+                To ensure that you choose the right type of assessment for your company’s needs, it’s important to understand the various types of VAPT services and the differences between them. The diverse nature of VAPT assessments means that they can vary significantly in depth, breadth, scope and price, so this understanding is critical to ensure tests deliver the best value for money.</p>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- Why do you need VAPT? -->
+      <section class="py-12 relative z-10 mb-12 lg:mb-20">
+        
+        <div class="max-w-6xl mx-auto px-5">
+          <div class="flex flex-col md:flex-row items-center md:justify-between w-full gap-6">
+            <div class="md:w-1/2 w-full md:pr-8 lg:pr-12">
+              <h2 class="text-white text-lg sm:text-4xl font-semibold mb-8">Why do you need VAPT?</h2>
+              <p class="text-white mb-7">The evolving tools, tactics and procedures used by cybercriminals to breach networks means that it’s important to regularly test your organisation’s cyber security.</p>
+              <p class="text-white mb-4">VAPT helps to protect your organisation by providing visibility of security weaknesses and guidance to address them. VAPT is increasingly important for organisations wanting to achieve compliance with standards including the GDPR, ISO 27001 and PCI DSS.</p>
+            </div>
+            <div class="w-full md:w-1/2 flex justify-center md:justify-end">
+              <img src="../images/vapt-3.png" alt="">
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+      <!-- <section class="py-12 max-w-6xl mx-auto px-5">
+        
+        <div 
+        class="w-full rounded-3xl border border-gray-700 px-6 py-16 sm:px-10 lg:p-16"
+        style="background: linear-gradient(251.06deg, rgba(255, 255, 255, 0.1) -0.58%, rgba(255, 255, 255, 0.08) 93.77%);"
+        >
+          <div class="md:flex items-center">
+            <div class="w-full md:w-1/3 md:pr-5 lg:pr-10 border-b border-b-gray-600 md:border-b-transparent md:border-r  md:border-r-gray-600">
+              <h3 class="text-white font-semibold text-4xl text-center md:text-left">
+                80%
+              </h3>
+              <p class="uppercase text-base text-white mt-5 pb-7  text-center md:text-left">
+                REDUCTION IN <br> VULNERABILITY NOISE
+              </p>
+              <hr class="w-1/2 border-gray-600 mb-7 mx-auto md:mr-auto md:ml-0">
+              <h3 class="text-white font-semibold text-4xl text-center md:text-left">
+                02
+              </h3>
+              <p class="uppercase text-base text-white mt-5 pb-7 text-center md:text-left">
+                SECONDS TO DETECT <br>THREATS
+              </p>
+            </div>
+            <div class="w-full md:w-2/3 md:pl-8 lg:pl-16 pt-16 md:pt-0">
+              <img src="../images/quote-light.png" class="w-10 object-contain" alt="">
+              <p class="text-white mt-5 mb-6">
+                What truly sets Meghops apart is their commitment to excellence. The end result of their work exceeded my expectations. They delivered high-quality results on time and within budget.
+              </p>
+              <img src="../images/logos/aamarpay_logo.png" class="h-9 object-contain mb-3" alt="">
+              <p class=" text-sm mb-6 text-white">Senior Infrastructure Security Engineer</p>
+              <a href="#" class="inline-flex items-center space-x-2 py-3 px-5 rounded-2xl border border-primary bg-dark hover:bg-primary transition text-white font-semibold text-xs">
+                <span>Ready case study</span>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                </svg>
+                
+              </a>
+            </div>
+          </div>
+        </div>
+      </section> -->
+
+      <!-- testimonial -->
+      <section class="py-8 px-5 relative mt-20">
+        <div class="absolute inset-x-0 bottom-0 -z-10">
+          <img src="../images/gradient-000.png" class="w-full h-auto object-contain" alt="">
+        </div>
+        <div 
+          class="max-w-6xl mx-auto rounded-2xl overflow-hidden"
+          style="background: linear-gradient(251.06deg, rgba(255, 255, 255, 0.1) -0.58%, rgba(255, 255, 255, 0.08) 93.77%);
+            border: 1px solid;
+            border-image-source: linear-gradient(180deg, rgba(255, 255, 255, 0.29) 0%, rgba(255, 255, 255, 0) 100%);
+          "
+        >
+          <div 
+            class="p-6 relative"
+            x-data="{slide: 2}"
+          >
+            <div x-show="slide == 1" style="display: none;" class="md:flex items-center">
+              <div 
+                class="w-full md:w-72 rounded-2xl overflow-hidden h-96"
+              >
+
+                <div class="flex items-center justify-center h-full">
+                  <img src="../images/person-two.jpeg" class="w-full h-auto rounded-xl object-contain" alt="">
+                </div>
+
+                
+                <!-- <button class="primary-button w-10 h-10 flex items-center justify-center p-0 rounded-full absolute z-0 bottom-5 right-5">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                    <path fill-rule="evenodd" d="M4.5 5.653c0-1.427 1.529-2.33 2.779-1.643l11.54 6.347c1.295.712 1.295 2.573 0 3.286L7.28 19.99c-1.25.687-2.779-.217-2.779-1.643V5.653Z" clip-rule="evenodd" />
+                  </svg>
+                </button> -->
+              </div>
+
+
+              <div class="md:ml-8 lg:ml-16 flex-1 flex items-start mt-6 md:mt-0 pb-20 md:pb-0">
+                <div class="mr-5 flex-shrink-0">
+                  <img src="../images/quote.png" class="w-14 flex-shrink-0 object-contain" alt="">
+                </div>
+                <div>
+                  <p class="text-white text-xl lg:text-2xl font-normal ">
+                    <!-- First time VAPT, we are very satisfied and will definitely keep on working together! -->
+                    Great communication, the team is very flexible to accommodate our specific conditions and requirements. The team also really care about the customer and took time to walk us through the report and even help us brainstorm fixes....
+
+                  </p>
+
+                  <div class="w-1/2 h-[1px] bg-gray-500 relative my-10">
+                    <div class="absolute z-10 bg-white h-full  left-1/2 w-7"></div>
+                  </div>
+
+                  <h3 class="font-bold text-white text-3xl mb-2">
+                    Natasha Syed
+                  </h3>
+                  <p class="text-white text-2xl font-normal">Founder & CEO </p>
+                  <p class="text-white text-sm mt-1 font-normal">SkilledIn Green</p>
+                </div>
+              </div>
+            </div>
+
+            <div x-show="slide == 2" style="display: none;" class="md:flex items-center">
+              <div 
+                class="w-full md:w-72 rounded-2xl overflow-hidden h-96"
+              >
+
+                <div class="flex items-center justify-center h-full">
+                  <img src="../images/person.jpeg" class="w-full h-auto rounded-xl object-contain" alt="">
+                </div>
+                
+                
+              </div>
+
+
+              <div class="md:ml-8 lg:ml-16 flex-1 flex items-start mt-6 md:mt-0 pb-20 md:pb-0">
+                <div class="mr-5 flex-shrink-0">
+                  <img src="../images/quote.png" class="w-14 flex-shrink-0 object-contain" alt="">
+                </div>
+                <div>
+                  <p class="text-white text-xl lg:text-2xl font-normal ">
+                  
+                    I wanted to express my heartfelt appreciation for the outstanding cyber security service your team provided. Your expertise and dedication in safeguarding our organization's digital assets have been invaluable. Thank you for helping us stay secure in an increasingly complex online landscape.
+
+                  </p>
+
+                  <div class="w-1/2 h-[1px] bg-gray-500 relative my-10">
+                    <div class="absolute z-10 bg-white h-full  left-1/2 w-7"></div>
+                  </div>
+
+                  <h3 class="font-bold text-white text-3xl mb-2">
+                    A M Ishtiaque Sarwar
+                  </h3>
+                  <p class="text-white text-2xl font-normal">Managing Director</p>
+                  <p class="text-white text-sm mt-1 font-normal">aamarPay</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="absolute bottom-7 right-1/2 translate-x-1/2 md:translate-x-0 md:right-7 flex items-center space-x-4">
+              <button 
+                class="w-12 h-12 flex items-center justify-center text-white bg-[#FFFFFF00] rounded-2xl"
+                @click="slide = 2"
+                style="
+                  border: solid 2px transparent;
+              background-image: linear-gradient(#3c3437, #3c3437), radial-gradient(circle at top left, #FFFFFF4A,#FFFFFF00);
+              background-origin: border-box;
+              background-clip: content-box, border-box;
+                "
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+                </svg>                
+              </button>
+
+              <button @click="slide = 1" class="primary-button w-12 h-12 flex items-center justify-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                  </svg>
+            </button>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+        <section class="px-5 relative py-12 mt-12 md:mt-20">
+          <div class="absolute inset-0 w-full h-full flex items-center justify-center -z-10">
+            <img src="../images/gradients/gradient-4.png" class="w-full h-auto object-contain" alt="">
+          </div>
+          <div class="max-w-xl mx-auto flex flex-col items-center justify-center">
+            <h2 class="text-white font-semibold text-3xl md:text-4xl mb-6 text-center">The benefits of an agile methodology</h2>
+            <p class="text-white text-sm mb-7 text-center">Agile pen testing is a method of integrating regular testing into your software development lifecycle (SDLC), rather than testing at infrequent points in time. This form of continuous pen testing works with release schedules to ensure that new features are secure and don’t translate into risk for your customers.</p>
+            <!-- <a href="#" class="primary-button mt-5">
+              <span class="px-6 py-3 inline-flex items-center space-x-2">
+                <span>LEARN MORE ABOUT AGILE PEN TESTING</span>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                </svg>
+              </span>
+            </a> -->
+          </div>
+        </section>
 
 
 
@@ -1265,7 +1394,7 @@
             class="lg:flex lg:space-x-5 space-y-10 lg:space-y-0 justify-between"
           >
             <div>
-              <img src="./images/logo-new.png" class="h-14" alt="" />
+              <img src="../images/logo-new.png" class="h-14" alt="" />
               <p class="mt-4 text-lg text-gray-300 max-w-xs">
                 MeghOps is a trusted and reliable managed security service
                 provider (MSSP).
@@ -1393,7 +1522,7 @@
               </div>
               <!-- <button class="inline-flex text-white items-center space-x-2 font-semibold px-5 py-3 rounded-2xl border-2 border-primary hover:bg-primary transition">
                 <span>Portfolio</span>
-                <img src="./images/cloud-icon.png" class="flex-shrink-0" alt="">
+                <img src="../images/cloud-icon.png" class="flex-shrink-0" alt="">
               </button> -->
             </div>
           </div>
@@ -1497,38 +1626,26 @@
 
 
 
+<script>
+  (function(d,t) {
+    var BASE_URL="https://app.chatwoot.com";
+    var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+    g.src=BASE_URL+"/packs/js/sdk.js";
+    g.defer = true;
+    g.async = true;
+    s.parentNode.insertBefore(g,s);
+    g.onload=function(){
+      window.chatwootSDK.run({
+        websiteToken: 'HeS38o8Ev2R3XFLENP2ddXs2',
+        baseUrl: BASE_URL
+      })
+    }
+  })(document,"script");
+</script>
 
 
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.8/axios.min.js" integrity="sha512-PJa3oQSLWRB7wHZ7GQ/g+qyv6r4mbuhmiDb8BjSFZ8NZ2a42oTtAq5n0ucWAwcQDlikAtkub+tPVCw4np27WCg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-            <script type="text/javascript">
 
-            document.addEventListener('alpine:init', () => {
-                    Alpine.data('form', () => ({
-                        apiUrl: 'https://app.meghops.com/v2/api/meghops/send-mail/get-demo',
-                        error: false,
-                        data: {
-                          "name": "",
-                          "companyName": "",
-                          "jobTitle": "",
-                          "phone": "",
-                          "email": "",
-                          "country": "",
-                          "text": ""
-                        },
-            
-                        async submit() {
 
-                          if (!this.data.companyName || !this.data.name || !this.data.jobTitle || !this.data.phone || !this.data.country || !this.data.text) {
-                            this.error = true
-                            return
-                          }
-
-                            let res = await axios.post(this.apiUrl, this.data)
-                            alert('success')
-                        }
-                    }))
-                })
-            </script>
 
   </body>
 </html>
